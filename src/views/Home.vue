@@ -1,11 +1,10 @@
 <template>
   <div class="home">
-    <Book   
-        v-for='singleBook in books' 
-        v-bind:key='singleBook.id'
-        v-bind:book="singleBook"
-        v-on:bookChosen="bookChosen"
-    />
+      <Book   
+          v-for='singleBook in books' 
+          v-bind:key='singleBook.id'
+          v-bind:book="singleBook"
+      />
   </div>
 </template>
 
@@ -18,11 +17,6 @@ export default {
   data() {
     return {
       books: Books.books
-    }
-  },
-  methods: {
-    bookChosen() {
-      
     }
   },
   name: 'Home',

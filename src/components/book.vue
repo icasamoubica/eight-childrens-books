@@ -1,27 +1,24 @@
 <template>
-    <div v-on:click='chooseBook' class="book">
+   <router-link class="book" v-bind:to="'/about/' + book.id">
         <div class="spine"></div>
         <div class="frontside">
             <h3>{{book.title}}</h3>
             <p>{{book.author}}</p>
         </div>
-    </div>
+   </router-link>
 </template>
 
 <script>
 export default {
     props: {
+        
         book: Object
-    },
-    methods: {
-        chooseBook() {
-             this.$emit('bookChosen', this.book)
-        }
     }
 }
 </script>
 
 <style>
+
 h3 {
     font-size: 1.7rem;
 }
@@ -39,6 +36,6 @@ p {
         width: 20em;
     }
     .spine, .frontside {
-        background-color: chocolate;
+        background-color: salmon;
     }
 </style>
