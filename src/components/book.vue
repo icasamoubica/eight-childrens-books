@@ -22,7 +22,7 @@ export default {
 }
 </script>
 
-<style>
+<style lnag="scss">
 
 .book {
     color: whitesmoke;
@@ -30,8 +30,8 @@ export default {
     display: grid;
     grid-template-columns: 5% 1.5% auto;
     background-color: rgb(43, 20, 20);
-    height: 22rem;
-    width: 20rem;
+    height: 18rem;
+    width: 15rem;
 }
 .book:hover, .book:visited, .book:link, .book:active
 {
