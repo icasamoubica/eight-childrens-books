@@ -8,10 +8,10 @@
             <p>{{book.plot}}</p>
         </div>
         <div class="info">
-            <p>{{book.audience}}</p>
-            <p>{{book.year}}</p>
-            <p>{{book.pages}}</p>
-            <p>{{book.publisher}}</p>
+            <p><em>Audience: </em>{{book.audience}}</p>
+            <p><em>First poublished: </em>{{book.year}}</p>
+            <p><em>Pages: </em>{{book.pages}}</p>
+            <p><em>Publisher: </em>{{book.publisher}}</p>
         </div>
         <button class="getIt">Oh, I want to read it!</button>
     </div>
@@ -28,10 +28,42 @@ export default {
     
 <style>
 .details {
+    margin: 15px;
     display: grid;
+    grid-template-rows: 20% auto 20%10%;
 }
-template {
-    height: 40rem;
-    width: 30rem;
+
+.titleAndAuthor > * {
+    margin-left: 0;
 }
+
+.description p {
+    margin: 0;
+    margin-top: 3rem
+}
+em {
+    font-style: normal;
+    font-weight: 800;
+}
+.info {
+    max-height: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.info p {
+    margin: 0;
+}
+
+button {
+    font-weight: 600;
+    max-width: 12rem;
+    max-height: 2.3rem;
+    border-radius: 4px;
+}
+
+
+
+
 </style>

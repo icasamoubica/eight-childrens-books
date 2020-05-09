@@ -1,9 +1,12 @@
 <template>
     <div class="about" v-bind:style="{ padding : '0 8rem 0 8rem'}">
         <Book v-bind:book="getBook"
-              v-bind:style="{ width : '30rem', 
-                              height : '40rem'}"/>
-        <About v-bind:book="getBook"/>
+              v-bind:style="{ width : '26rem', 
+                              height : '30rem',
+                              color: 'black' }"/>
+        <About v-bind:book="getBook"
+               v-bind:style="{ width : '26rem', 
+                              height : '30rem'}"/>
     </div>
 </template>
 
@@ -26,10 +29,12 @@ export default {
 
 <style>
     .about {
+        max-width: 52rem;
         background-color: rgb(32, 29, 29);
         display: grid;
         grid-template-columns: 1fr 1fr;
-        color: whitesmoke;
+        color: rgb(199, 194, 194);
+        line-height: 1.36rem;
     }
 
     body {
