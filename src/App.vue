@@ -28,4 +28,19 @@
     }
   }
 }
+
+
+h3 {
+    max-width: 70%;
+    font-size: 1.6rem;
+    margin: 0;
+    text-align: left;
+    margin-left: 1rem;
+}
+p {
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+    text-align: left;
+}
 </style>

@@ -40,4 +40,9 @@ export default {
     body {
         background-color: rgb(32, 29, 29);
     }
+    @media screen and (max-width: 1100px) {
+        .about {
+            grid-template-columns: 1fr;
+        }
+    }
 </style>

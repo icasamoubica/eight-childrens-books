@@ -35,21 +35,27 @@ export default {
 
 .titleAndAuthor > * {
     margin-left: 0;
+    margin-top: 0.3rem;
 }
 
 .description p {
     margin: 0;
-    margin-top: 3rem
+    margin-top: 1rem;
+    line-height: 1.6;
 }
 em {
     font-style: normal;
     font-weight: 800;
 }
 .info {
-    max-height: 4rem;
+    padding: 0.4rem;
+    border-radius: 3px;
+    background-color: rgba(255,255,255,0.07);
+    max-height: 4.3rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    margin-bottom: 1.9rem;
 }
 
 .info p {
