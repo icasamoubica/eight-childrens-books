@@ -13,6 +13,9 @@
   color: #2c3e50;
 }
 
-
+.app {
+  width: 100%;
+  height: 100%;
+}
 
 </style>

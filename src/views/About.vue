@@ -51,14 +51,14 @@ export default {
     color: rgb(168, 168, 168);
     line-height: 1.36rem;
 }
-
-body {
-    background-color: rgb(32, 29, 29);
-}
 @media screen and (max-width: 1100px) {
     .about {
         grid-template-columns: 1fr;
     }
+}
+.aboutView {
+    width: 100%;
+    height: 100%;
 }
 
 // home button

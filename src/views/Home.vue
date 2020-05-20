@@ -29,11 +29,21 @@ export default {
 }
 </script>
 <style>
-  .books {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr;
-  }
+body {
+  height: 100%;
+  width: 100%;
+}
+/* 
+.home {
+  background-color: burlywood;
+} */
+
+.books {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr;
+}
+
 
 h3 {
     max-width: 70%;

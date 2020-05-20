@@ -16,7 +16,6 @@
 <script>
 export default {
     props: {
-        
         book: Object
     }
 }
@@ -25,6 +24,7 @@ export default {
 <style lnag="scss">
 
 .book {
+    border-radius: 3px;
     color: whitesmoke;
     margin: 15px;
     display: grid;
