@@ -12,22 +12,25 @@
 </template>
 
 <script>
-// @ is an alias to /src
-import Books from '@/assets/childrensbooks.json'
 import Book from '@/components/book.vue'
 
 export default {
+
+  name: 'Home',
+
   data() {
     return {
-      books: Books.books
+      books: this.$store.state.books
     }
   },
-  name: 'Home',
+
   components: {
     Book
   }
 }
+
 </script>
+
 <style>
 body {
   height: 100%;

@@ -35,7 +35,7 @@ export default {
     },
     computed: {
         getBook() {
-            return this.$root.getBook( this.$route.params.id )
+            return this.$store.state.books.find(book => book.id == this.$route.params.id )
         }
     }
     

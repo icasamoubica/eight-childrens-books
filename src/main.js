@@ -7,16 +7,6 @@ import store from './store'
 Vue.config.productionTip = false
 
 new Vue({
-  // Shared stated between components
-  data(){return{
-    books: Book.books
-  }},
-
-  methods:{
-    getBook(id){
-      return this.books.find(book => book.id == id)
-    }
-  },
 
   router,
   store,
